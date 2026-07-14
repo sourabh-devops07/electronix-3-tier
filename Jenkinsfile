@@ -62,13 +62,12 @@ pipeline{
         }
     }
 
-    post{
-        success{
-            'Frontent Deployment Successfull ✅'
-        }
-
-        failure {
-            'Frontent Deployment Failed ❌'
-        }
+    post {
+    success {
+        echo 'Frontend Deployment Successful ✅'
     }
+    failure {
+        echo 'Frontend Deployment Failed ❌'
+    }
+  }
 }
